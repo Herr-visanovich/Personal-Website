@@ -5,8 +5,8 @@
     background-color: var(--color-dark);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    align-items: left;
+    max-width: 800px;
     gap: 1.5rem;
     margin-top: 10%;
     padding-top: 2rem;
@@ -14,7 +14,6 @@
 }
 .resume-section {
     /* background-color: darkslategrey; */
-    width: 90%;
     text-align: left;
     padding-inline: 1rem;
     border-left: 3px solid var(--color-accent);
