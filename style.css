@@ -1,5 +1,6 @@
 @import "./projects.css";
 @import "./resume.css";
+@import "./bottom-navbar-style.css";
 
 :root {
     --color-dark: #000000;
