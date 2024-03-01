@@ -1,0 +1,72 @@
+
+
+.fieldset-layout{
+    display: grid;
+    max-width: 500px;
+    grid-template-columns: 4;
+    gap: 1rem;
+    margin-inline: auto;
+}
+
+.field{
+    padding: 1.2em 0.25em 1.2em 1em;
+}
+
+#firstName {
+    grid-column: 1 / span 2;
+}
+
+#lastName{
+    grid-column: 3 / span 2;
+    grid-row: 1;
+}
+
+#email-address {
+    grid-column: 1 / span 2;
+}
+
+#phone{
+    grid-column: 3 / span 2;
+}
+
+#message {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#submission-button {
+    grid-column: 2 / span 2;
+}
+
+
+@media screen and (max-width: 600px){
+    .fieldset-layout{
+        grid-template-columns: auto;
+        max-width: 80%;
+    }
+
+    #firstName {
+        grid-column: 1;
+    }
+    
+    #lastName{
+        grid-column: 1;
+    }
+    
+    #email-address {
+        grid-column: 1;
+    }
+    
+    #phone{
+        grid-column: 1;
+    }
+    
+    #message {
+        grid-column: 1;
+    }
+    
+    #submission-button {
+        grid-column: 1;
+    }
+
+}

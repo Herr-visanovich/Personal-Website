@@ -1,6 +1,7 @@
 @import "./projects.css";
 @import "./resume.css";
 @import "./bottom-navbar-style.css";
+@import "./contact.css";
 
 :root {
     --color-dark: #000000;
@@ -121,7 +122,7 @@ footer {
 @media screen and (max-width: 800px) {
 
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .landing-container {
@@ -172,7 +173,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     body {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .landing-container {
