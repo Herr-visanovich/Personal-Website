@@ -121,7 +121,10 @@ footer {
 
 @media screen and (max-width: 800px) {
 
-    
+    body {
+        font-size: 14px;
+    }
+
     .landing-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -170,7 +173,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .landing-container {
@@ -207,10 +210,6 @@ footer {
         height: 100%;
         object-fit: cover; /* Maintain aspect ratio and cover the container */
         object-position: center center;
-    }
-
-    form {
-        margin-top: 1.5rem;
     }
 
     
