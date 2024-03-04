@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visani Andrea - Home</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="stylesTest.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
@@ -51,6 +51,22 @@
 
             <footer>©2024 Andrea Visani. All rights reserved.</footer>
     </body>
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var options = {
+                strings: ["Hello Visitor."],
+                typeSpeed: 70,
+                backSpeed: 25,
+                showCursor: false,
+                cursorChar: '|',
+            };
+            var typed = new Typed('#typed-output', options);
+        });
+    
+        function toggleNavbar() {
+            var navbarContainer = document.querySelector('.bottom-navbar-container');
+            navbarContainer.classList.toggle('show-navbar');
+        }
+    </script>
 </html>
 

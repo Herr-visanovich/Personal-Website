@@ -4,8 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visani Andrea - Home</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="stylesheet" href="resume.css" type="text/css">
-        <link rel="stylesheet" href="bottom-navbar-style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
@@ -14,12 +12,20 @@
 
     <body>
         <div class="central-element">
-            <div class="bottom-navbar-container">
-                <div class="bottom-navbar-element" id="name">ANDREA VISANI</div>
-                <div class="bottom-navbar-element clickable"><a href="./index.html">HOME</a></div>
-                <div class="bottom-navbar-element clickable"><a href="projects.html">PROJECTS</a></div>
-                <div class="bottom-navbar-element clickable"><a href="#">RESUME</a></div>
-                <div class="bottom-navbar-element clickable"><a href="contact.html">CONTACT</a></div>
+            <!-- START OF NAVBAR -->
+            <div class="navbar-container">
+                <div id="name" class="bottom-navbar-element">ANDREA VISANI</div>
+                <div class="burger-menu" onclick="toggleNavbar()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="bottom-navbar-container">
+                    <div class="bottom-navbar-element clickable"><a href="./index.html">HOME</a></div>
+                    <div class="bottom-navbar-element clickable"><a href="./projects.html">PROJECTS</a></div>
+                    <div class="bottom-navbar-element clickable"><a href="./resume.html">RESUME</a></div>
+                    <div class="bottom-navbar-element clickable"><a href="./contact.html">CONTACT</a></div>
+                </div>
             </div>
 
             <div class="resume-container">
@@ -146,4 +152,5 @@
 
         <footer>©2024 Andrea Visani. All rights reserved.</footer>
     </body>
+    <script src="script.js"></script>
 </html>
