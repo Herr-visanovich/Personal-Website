@@ -76,7 +76,7 @@
     font-size: 0.9rem;
 }
 
-.github-button{
+.card-button{
     margin-inline: auto;
     width: fit-content;
     border: 2px solid var(--color-dark);
@@ -88,6 +88,6 @@
     height: 1.5rem;
 }
 
-.github-button:hover{
+.card-button:hover{
     box-shadow: 2px 2px 5px 0px black;
 }
