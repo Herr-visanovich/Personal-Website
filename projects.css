@@ -78,16 +78,28 @@
 
 .card-button{
     margin-inline: auto;
-    width: fit-content;
+    width: 5rem;
     border: 2px solid var(--color-dark);
     border-radius: 5px;
     font-size: 0.9rem;
     margin-top: 0.7rem;
+    padding: 0.3rem;
 }
-.github-image {
-    height: 1.5rem;
-}
+
 
 .card-button:hover{
     box-shadow: 2px 2px 5px 0px black;
 }
+
+#prev-image, #next-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+card-button a {
+    width: 100%;
+}
+
+
+
