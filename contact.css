@@ -1,5 +1,5 @@
 
-
+/*Create a 4 column grid*/
 .fieldset-layout{
     display: grid;
     max-width: 500px;
@@ -12,6 +12,7 @@
     padding: 1.2em 0.25em 1.2em 1em;
 }
 
+/* SET EACH ELEMENT IN ITS POSITION */
 #firstName {
     grid-column: 1 / span 2;
 }
@@ -39,7 +40,8 @@
 }
 
 
-@media screen and (max-width: 600px){
+/*Change the form and stack the elements for smaller screen sizes*/
+@media screen and (max-width: 510px){
     .fieldset-layout{
         grid-template-columns: auto;
         max-width: 80%;
