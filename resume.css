@@ -1,15 +1,13 @@
 
-
+/* SET FLEX AND BASIC PROPERTIES FOR THE WHOLE RESUME */
 .resume-container {
     color: var(--color-light);
     background-color: var(--color-dark);
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: start;
     max-width: 800px;
     gap: 1.5rem;
-    margin-top: 10%;
-    padding-top: 2rem;
     margin-inline: auto;
 }
 
@@ -38,7 +36,6 @@
 
 .skill-list {
     margin-top: 1.2rem;
-
 }
 
 

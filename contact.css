@@ -3,7 +3,7 @@
 .fieldset-layout{
     display: grid;
     max-width: 500px;
-    grid-template-columns: 4;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-inline: auto;
 }
@@ -12,14 +12,19 @@
     padding: 1.2em 0.25em 1.2em 1em;
 }
 
-/* SET EACH ELEMENT IN ITS POSITION */
+/* SET EACH ELEMENT IN ITS POSITION FOR DESKTOP*/
+/** FNAME LNAME
+    MAIL  PHONE
+        TEXT
+       CONTACT */
 #firstName {
     grid-column: 1 / span 2;
+    
 }
 
 #lastName{
     grid-column: 3 / span 2;
-    grid-row: 1;
+    
 }
 
 #email-address {
@@ -47,27 +52,8 @@
         max-width: 80%;
     }
 
-    #firstName {
-        grid-column: 1;
-    }
-    
-    #lastName{
-        grid-column: 1;
-    }
-    
-    #email-address {
-        grid-column: 1;
-    }
-    
-    #phone{
-        grid-column: 1;
-    }
-    
-    #message {
-        grid-column: 1;
-    }
-    
-    #submission-button {
+    /*Make every element stack in one column*/
+    #firstName, #lastName, #email-address, #phone, #message, #submission-button  {
         grid-column: 1;
     }
 

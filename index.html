@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Andrea Visani">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visani Andrea - Home</title>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +24,12 @@
 
                     <!-- BURGER MENU -->
                     <div class="burger-menu" onclick="toggleNavbar()">
-                        <div class="bar"></div>
+                        <!-- those 3 empty div create the actual burger -->
+                        <div class="bar"></div> 
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
+                    <!-- END BURGER MENU -->
 
                     <!-- DESKTOP NAVBAR -->
                     <div class="bottom-navbar-container">
@@ -37,28 +42,44 @@
                 <!-- END OF NAVBAR -->
 
                 <!-- START OF LANDING ELEMENT -->
-                <div class="landing-container">
-                    <div id="title-container">
-                        <h1 class="highlight-text-bright">Hello Visitor.</h1>
+                <main>
+                    <div class="landing-container">
+
+                            <div id="title-container">
+                                <h1 class="highlight-text-bright">Hello Visitor.</h1>
+                            </div>
+
+
+                        <div id="central-text-container">
+
+                            <p id="central-text">My name is <span class="highlight-text-bright"><b>Andrea Visani</b></span>, 
+                                an aspiring programmer currently based in Ottawa, pursuing a degree in Computer Programming at Algonquin College.
+                            </p>
+                            <br> 
+                            <!-- LINK TO ALGONQUIN COURSES -->
+                            <a id="courses_button" href="https://www.algonquincollege.com/sat/program/computer-programming/#courses" target="_blank">Look at my courses</a>
+                            <br>
+                            <br>
+                            <p>I thrive on transforming dynamic and captivating projects into reality. 
+                                Beyond my academic pursuits, I am a fervent soccer enthusiast. 
+                                Recently, I uncovered a newfound passion for indoor climbing, and I pride myself on being a proficient home cook.
+                            </p>
+                        </div>
+                        <!-- END CENTRAL TEXT -->
+
+                        <!-- PICTURE  -->
+                        <div id="image-container">
+                            <img id="my-img" src="images/Andrea_Picture.jpg" alt="My picture">
+                        </div>  
+
                     </div>
-                    <div id="central-text-container">
-                        <p id="central-text">My name is <span class="highlight-text-bright"><b>Andrea Visani</b></span>, 
-                            an aspiring programmer currently based in Ottawa, pursuing a degree in Computer Programming at Algonquin College.</p>
-                        <br> <a id="courses_button" href="https://www.algonquincollege.com/sat/program/computer-programming/#courses" target="_blank">Look at my courses</a><br><br>
-                        <p>I thrive on transforming dynamic and captivating projects into reality. 
-                            Beyond my academic pursuits, I am a fervent soccer enthusiast. 
-                            Recently, I uncovered a newfound passion for indoor climbing, and I pride myself on being a proficient home cook.
-                        </p>
-                    </div>
-                    <div id="image-container">
-                        <img id="my-img" src="images/Andrea_Picture.jpg" alt="My picture">
-                    </div>   
-                </div>
+                </main>
+                <!-- END LANDING CONTAINER -->
 
             </div>
 
             <footer>©2024 Andrea Visani. All rights reserved.</footer>
     </body>
-    <script src="script.js"></script>
+
 </html>
 

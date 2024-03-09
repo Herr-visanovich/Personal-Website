@@ -10,7 +10,7 @@ closeNavbarOnLoad();
 // shows the burger navbar 
 function toggleNavbar() {
     var navbarContainer = document.querySelector('.bottom-navbar-container');
-    navbarContainer.classList.toggle('show-navbar');
+    navbarContainer.classList.toggle('show-navbar'); // show or hide the the navbar
 }
 
 
@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // for each "next" button, use an eventlistener and call the function to show the next card on click
-    document.querySelectorAll('.card-button.next').forEach(function (button) {
+    document.querySelectorAll('.next').forEach(function (button) {
         button.addEventListener('click', showNextCard);
     });
 
     // for each "previsous" button, use an eventlistener and call the function to show the previous card on click
-    document.querySelectorAll('.card-button.previous').forEach(function (button) {
+    document.querySelectorAll('.previous').forEach(function (button) {
         button.addEventListener('click', showPreviousCard);
     });
 
