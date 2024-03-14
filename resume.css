@@ -11,10 +11,15 @@
     margin-inline: auto;
 }
 
+.resume-container section {
+    width: 100%;
+}
+
 .resume-section {
     text-align: left;
     padding-inline: 1rem;
     border-left: 3px solid var(--color-accent);
+    
 }
 
 .resume-section li {

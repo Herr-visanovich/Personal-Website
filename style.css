@@ -1,7 +1,6 @@
 /* Import statements to connect other sheets */
 @import "./projects.css";
 @import "./resume.css";
-@import "./bottom-navbar-style.css";
 @import "./contact.css";
 
 /* Root variables */
