@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Andrea Visani">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Visani Andrea - Home</title>
+        <title>Visani Andrea - Projects</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js" defer></script>
     </head>
 
     <body>
         
-        
-            <!-- START OF CENTRAL ELEMENT -->
+        <!-- START OF CENTRAL ELEMENT -->
+        <div class="central-element">
 
-            <div class="central-element">
-                <!-- START OF NAVBAR -->
-                <div class="navbar-container">
-                    <div id="name" class="bottom-navbar-element">ANDREA VISANI</div>
-                    <div class="burger-menu" onclick="toggleNavbar()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="bottom-navbar-container">
-                        <div class="bottom-navbar-element clickable"><a href="./index.html">HOME</a></div>
-                        <div class="bottom-navbar-element clickable"><a href="./projects.html">PROJECTS</a></div>
-                        <div class="bottom-navbar-element clickable"><a href="./resume.html">RESUME</a></div>
-                        <div class="bottom-navbar-element clickable"><a href="./contact.html">CONTACT</a></div>
-                    </div>
+            <!-- START OF NAVBAR -->
+            <div class="navbar-container">
+                <div id="name" class="bottom-navbar-element">ANDREA VISANI</div>
+
+                <!-- BURGER MENU -->
+                <div class="burger-menu" onclick="toggleNavbar()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-                <!-- START OF LANDING ELEMENT -->
-                <br>
-                <br>
-                <H1>MY PROJECTS</H1>
-                <div class="project-container">
 
-                   <!-- CARD 1 -->
+                <!-- DESKTOP NAVBAR -->
+                <div class="bottom-navbar-container">
+                    <div class="bottom-navbar-element clickable"><a href="./index.html">HOME</a></div>
+                    <div class="bottom-navbar-element clickable"><a href="./projects.html">PROJECTS</a></div>
+                    <div class="bottom-navbar-element clickable"><a href="./resume.html">RESUME</a></div>
+                    <div class="bottom-navbar-element clickable"><a href="./contact.html">CONTACT</a></div>
+                </div>
+            </div>
+            <!-- END OF NAVBAR -->
+
+            <!-- START OF LANDING ELEMENT -->
+            <br>
+            <br>
+            <header>
+                <H1>MY PROJECTS</H1>
+            </header>
+
+            <!-- START PROJECT CONTAINER -->
+            <div class="project-container">
+                <!-- CARD 1 -->
+                <article>
                     <div class="card-container" id="0">
-                        <img class="card-image" src="images/awakening.jpeg" alt="Awakening game image" width="100%">
+
+                        <img class="card-image" src="images/awakening.jpeg" alt="Awakening game image">
+                        
                         <div class="labels">
                             <div class="card-label">
                                 <strong>C#</strong>
@@ -50,32 +63,38 @@
                             <div class="card-label">
                                 <strong>OOP</strong>
                             </div>
+                            
                         </div>
+                        <p class="project-date">Dec - 2023</p>
 
                         <div class="card-text-header">
+                            <button class="previous"> &lt;&lt; </button>
                             <h2>The Awakening</h2>
+                            <button class="next" >>></button>
                         </div>
+
                         <div class="card-text-paragraph">
-                            <p>I utilized the Unity game engine and C# language to code a brief 2D game, demonstrating my proficiency in implementing game functionalities and mechanics. This involved the creation of character movement, collision detection, and interactive objects, highlighting my adept problem-solving skills. Additionally, I applied object-oriented programming principles to establish a modular and easily maintainable game architecture.</p>
+                            <p>
+                                I utilized the Unity game engine and C# language to code a brief 2D game, demonstrating my proficiency in implementing game functionalities and mechanics. 
+                                This involved the creation of character movement, collision detection, and interactive objects, highlighting my adept problem-solving skills. 
+                                Additionally, I applied object-oriented programming principles to establish a modular and easily maintainable game architecture.
+                            </p>
                         </div>
+
                         <div class="labels">
-                            <div class="card-button previous " >
-                                <img id="prev-image" src="./images/Prev.png" alt="previous-logo">
-                            </div>
                             <div class="card-button">
                                 <a href="https://github.com/andreavisani/TheAwakening" target="_blank"><img class="github-image" src="images/GitHub_Logo.png" alt="github logo"></a>
                             </div>
-                            <div class="card-button next" >
-                                <img id="next-image" src="./images/Next2.png" alt="next-logo">
-                            </div>
-
                         </div>
                         
                     </div>
-                    
-                    <!-- CARD 2 -->
+                </article>
+                <!-- END CARD 1 -->
+                
+                <!-- CARD 2 -->
+                <article>
                     <div class="card-container" id="1">
-                        <img class="card-image" src="images/hangman.jpg" alt="Awakening game image" width="100%">
+                        <img class="card-image" src="images/hangman.jpg" alt="Awakening game image" >
                         <div class="labels">
                             <div class="card-label">
                                 <strong>Java</strong>
@@ -87,31 +106,35 @@
                                 <strong>Testing</strong>
                             </div>
                         </div>
+                        <p class="project-date">Nov - 2023</p>
 
                         <div class="card-text-header">
+                            <button class="previous"> &lt;&lt; </button>
                             <h2>Hangman</h2>
+                            <button class="next" >>></button>
                         </div>
                         <div class="card-text-paragraph">
-                            <p>I designed and implemented a Hangman game as a command-line application using Java. Additionally, I conducted thorough testing to identify and resolve potential bugs, ensuring the software's stability and correctness.</p>
+                            <p>
+                                I designed and implemented a Hangman game as a command-line application using Java. 
+                                Additionally, I conducted thorough testing to identify and resolve potential bugs, 
+                                ensuring the software's stability and correctness.
+                            </p>
                         </div>
+
+                        <!-- BOTTOM BUTTONS -->
                         <div class="labels">
-                            <div class="card-button previous">
-                                <img id="prev-image" src="./images/Prev.png" alt="previous-logo">
-                            </div>
                             <div class="card-button">
                                 <a href="https://github.com/andreavisani/Hangman-terminal-game" target="_blank"><img class="github-image" src="images/GitHub_Logo.png" alt="github logo"></a>
                             </div>
-                            <div class="card-button next">
-                                <img id="next-image" src="./images/Next2.png" alt="next-logo">
-                            </div>
-
                         </div>
                     </div>
-                    <!-- END CARD 2-->
-                    
-                    <!-- CARD 3 -->
+                </article>
+                <!-- END CARD 2-->
+                
+                <!-- CARD 3 -->
+                <article>
                     <div class="card-container" id="2">
-                        <img class="card-image" src="images/Database.png" alt="Database image" width="100%">
+                        <img class="card-image" src="images/Database.png" alt="Database image" >
                         <div class="labels">
                             <div class="card-label">
                                 <strong>SQL</strong>
@@ -123,36 +146,65 @@
                                 <strong>Normalization</strong>
                             </div>
                         </div>
+                        <p class="project-date">Dec - 2023</p>
 
                         <div class="card-text-header">
+                            <button class="previous"> &lt;&lt; </button>
                             <h2>School Database</h2>
+                            <button class="next" >>></button>
                         </div>
+
                         <div class="card-text-paragraph">
                             <p>With my team, I developed a comprehensive school database using SQL, encompassing conceptual, logical, and physical design phases. We applied normalization up to the 3rd normal form and utilized PgAdmin for implementing Database Definition Language (DDL) and Data Manipulation Language (DML) operations.</p>
                         </div>
-                        <div class="labels">
-                            <div class="card-button previous">
-                                <img id="prev-image" src="./images/Prev.png" alt="previous-logo">
-                            </div>
-                            
-                            
-                            <div class="card-button next">
-                                <img id="next-image" src="./images/Next2.png" alt="next-logo">
-                            </div>
 
+                        <div class="labels">
+                            
                         </div>
+                    </div>
+                </article>
+                <!-- END CARD 3 -->
+
+                <!-- CARD 4 -->
+                <article>
+                    <div class="card-container" id="3">
+                    <img class="card-image" src="images/tictactoe.png" alt="Database image" >
+                    <div class="labels">
+                        <div class="card-label">
+                            <strong>Java</strong>
+                        </div>
+                        <div class="card-label">
+                            <strong>Algorithm Design</strong>
+                        </div>
+                        <div class="card-label">
+                            <strong>OOP</strong>
+                        </div>
+                    </div>
+                    <p class="project-date">Dec - 2023</p>
+
+                    <div class="card-text-header">
+                        <button class="previous"> &lt;&lt; </button>
+                        <h2>TicTacToe</h2>
+                        <button class="next" >>></button>
+                    </div>
+                    <div class="card-text-paragraph">
+                        <p>
+                            As a personal project i developed a console-based Tic-Tac-Toe game in Java, featuring a robust winning logic, error handling, and a scalable design for future enhancements. 
+                            This project underscores my proficiency in Java development and commitment to create hands on projects.
+                        </p>
+                    </div>
+                    <div class="labels">
                         
                     </div>
-
-                    
-
-                </div>
-                
-
+                    </div>
+                </article>
+                <!-- END CARD 4 -->
             </div>
+            <!-- END PROJECT CONTAINER -->
+        </div>
+        <!-- END CENTRAL ELEMENT -->
 
-            <footer>©2024 Andrea Visani. All rights reserved.</footer>
+        <footer>©2024 Andrea Visani. All rights reserved.</footer>
     </body>
-    <script src="script.js"></script>
 </html>
 

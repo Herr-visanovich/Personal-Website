@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Andrea Visani">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Visani Andrea - Home</title>
+        <title>Visani Andrea - Resume</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -15,11 +17,15 @@
             <!-- START OF NAVBAR -->
             <div class="navbar-container">
                 <div id="name" class="bottom-navbar-element">ANDREA VISANI</div>
+
+                <!-- BURGER MENU -->
                 <div class="burger-menu" onclick="toggleNavbar()">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
+
+                <!-- DESKTOP NAVBAR -->
                 <div class="bottom-navbar-container">
                     <div class="bottom-navbar-element clickable"><a href="./index.html">HOME</a></div>
                     <div class="bottom-navbar-element clickable"><a href="./projects.html">PROJECTS</a></div>
@@ -27,130 +33,155 @@
                     <div class="bottom-navbar-element clickable"><a href="./contact.html">CONTACT</a></div>
                 </div>
             </div>
+            <!-- END OF NAVBAR -->
 
+            <!-- START RESUME -->
+            <br>
+            <br>
+            <header>
+                <H1>MY EXPERIENCE</H1>
+            </header>
             <div class="resume-container">
+                
                 <div class="resume-section">
                     <h1>ANDREA VISANI</h1>
                     <p>506 Gladstone, Ottawa ON, K1R 5P1 | 343 777 9322 | visa0004@algonquinlive.com | www.linkedin.com/in/andreavisani</p>
                 </div>
-                <!-- <div class="line-divider"></div> -->
-                <div class="resume-section">
-                    <h2>EDUCATION</h2>
-                    <div class="with-date">
-                        <b>Computer Programming Diploma</b><span>09/2023 - Present</span>
-                    </div>
-                    
-                    <p>Algonquin College</p>
-                    <ul>
-                        <li>Dean's Honour List for the 1st semester</li>
-                        <li>GPA: 4.0 / 4.0</li>
-                    </ul>
-                </div>
-                <!-- <div class="line-divider"></div> -->
-                <div class="resume-section">
-                    <h2>PROGRAM-RELATED SKILLS</h2>
-                    <p><b>Programming Languages:</b> Java, SQL</p>
-                    <p><b>Software:</b> Eclipse, Virtual Studio Code, MySQL Workbench, VMware Workstation Pro, XAMPP, SQL Server Management Studio 19, Umlet, Microsoft Office.</p>
-                    <p><b>DBMS:</b> PostgreSQL, MS Access, MySQL, Microsoft SQL Server, Oracle, MongoDB</p>
-                    <p><b>Web-Dev Tools: </b> HTML, CSS, JavaScript, PHP</p>
-                    <br>
-                    <ul>
-                        <li>Enhanced problem-solving abilities through ongoing practice and a dedicated pursuit of optimal solutions</li>
-                        <li>Designed, implemented, tested and debugged Java programs using object-oriented principles</li>
-                        <li>Generated well designed databases and manipulated them using SQL commands</li>
-                        <li>Developed and operated within a Linux environment using a virtual machine</li>
-                        <li>Developed responsive websites pages and forms connected to databases</li>
-                        <li>Learned to use manual and automated debugging techniques through the tools provided by the programs</li>
-                        <li>Enhanced effective technical communication by drafting technical reports and delivering oral presentations</li>
-                    </ul>
-                </div>
 
-                <div class="resume-section">
-                    <h2>ADDITIONAL QUALIFICATIONS</h2>
+
+                <!-- START SECTIONS  -->
+                <section>
+                    <div class="resume-section">
+                        <h2>EDUCATION</h2>
+                        <div class="with-date">
+                            <b id="college">Computer Programming Diploma</b><span>09/2023 - Present</span>
+                        </div>
+                        
+                        <p>Algonquin College</p>
+                        <ul>
+                            <li>Dean's Honour List for the 1st semester</li>
+                            <li>GPA: 4.0 / 4.0</li>
+                        </ul>
+                    </div>
+                </section>
+                    
+                <section>
+                    <div class="resume-section">
+                        <h2>PROGRAM-RELATED SKILLS</h2>
+                        <p><b>Programming Languages:</b> Java, SQL</p>
+                        <p><b>Software:</b> Eclipse, Virtual Studio Code, MySQL Workbench, VMware Workstation Pro, XAMPP, SQL Server Management Studio 19, Umlet, Microsoft Office.</p>
+                        <p><b>DBMS:</b> PostgreSQL, MS Access, MySQL, Microsoft SQL Server, Oracle, MongoDB</p>
+                        <p><b>Web-Dev Tools: </b> HTML, CSS, JavaScript, PHP</p>
+                        <br>
+                        <ul>
+                            <li>Enhanced problem-solving abilities through ongoing practice and a dedicated pursuit of optimal solutions</li>
+                            <li>Designed, implemented, tested and debugged Java programs employing object-oriented principles</li>
+                            <li>Generated and manipulated well-designed databases using SQL commands</li>
+                            <li>Operated within a Linux environment inside a virtual machine</li>
+                            <li>Developed responsive websites pages and forms connected to databases</li>
+                            <li>earned manual and automated debugging techniques through tools provided by programs</li>
+                            <li>Enhanced effective technical communication by drafting technical reports and delivering oral presentations</li>
+                        </ul>
+                    </div>
+                </section>
+                
+
+                <section>
+                    <div class="resume-section">
+                        <h2>ADDITIONAL QUALIFICATIONS</h2>
                         <ul>
                             <li>Developed excellent teamwork skills by working in a group in a professional setting, at college and in sport</li>
                             <li>Exemplary time management skills demonstrated by consistently meeting the deadlines and delivering quality work</li>
                             <li>Calm and positive attitude towards team members and customers</li>
                             <li>Showcased robust leadership skills, cultivated through the role of a vice-manager in a professional setting, coupled with years of dedicated service as the captain of a soccer team.</li>
                         </ul>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="resume-section">
+                        <h2>WORK EXPERIENCE</h2>
+                        <article>
+                            <div class="work-experience-section">
+                                <div class="with-date">
+                                    <h4>Kitchen Operator (part time)</h4><span>10/2023 - Present</span>
+                                </div>
+                                <P>The Works, Ottawa</P>
+                                <ul class="skill-list">
+                                    <li>Organized and systematic approach to the work shift</li>
+                                    <li>Proficiency in thriving within a fast-paced work environment</li>
+                                    <li>Skill in balancing my work life with college through effective time management</li>
+                                    <li>Proficiency in collaborating within a team characterized by diverse cultures and age groups</li>
+                                </ul>
+                            </div>
+                        </article>
                     
-                </div>
-
-                <div class="resume-section">
-                    <h2>WORK EXPERIENCE</h2>
-                    <div class="work-experience-section">
-                        <div class="with-date">
-                            <b>Kitchen Operator (part time)</b><span>10/2023 - Present</span>
-                        </div>
-                        <P>The Works, Ottawa</P>
-                        <ul class="skill-list">
-                            <li>Organized and systematic approach to the work shift</li>
-                            <li>Proficiency in thriving within a fast-paced work environment</li>
-                            <li>Skill in balancing my work life with college through effective time management</li>
-                            <li>Proficiency in collaborating within a team characterized by diverse cultures and age groups</li>
-                        </ul>
-                    </div>
-                    <br>
-
-                    <div class="sub-section">
-                        <div class="with-date">
-                            <b>Technical sales specialists (Office Furniture)</b><span>07/2019 - 08/2023</span>
-                        </div>
-                        <P>Punto Ufficio, Castel Bolognese, Italy</P>
-                        <ul class="skill-list">
-                            <li>Identify and cultivate new clients for long-term relationships</li>
-                            <li>Verify the client's needs and develop a project using AutoCAD.</li>
-                            <li>Preparation of offers and sales prices, management of negotiations, and finalizing the sale</li>
-                            <li>After sale supervision of delivery, assembly and site inspection</li>
-                            <li>Managed and updated company website with new product releases</li>
-                            <li>Took the initiative to develop new additional company media, including print presentations and videos. Resulting in a better appointment/sell ratio for the whole team and a better customer experience</li>
-                        </ul>
-                    </div>
-                    <br>
-
-                    <div class="sub-section">
-                        <div class="with-date">
-                            <b>Real Estate Agent </b><span>11/2017 – 06/2019</span>
-                        </div>
-                        <P>Tecnocasa, Castel Bolognese, Italy</P>
-                        <ul class="skill-list">
-                            <li>Cultivated strong client relationships, proactively addressing their needs</li>
-                            <li>Demonstrated a profound understanding of local market trends</li>
-                            <li>Proficient in securing deals with expertise in contract negotiation</li>
-                            <li>Tailored precise communication to meet the unique needs of each client</li>
-                            <li>Excelled in creating compelling property listings and demonstrated adeptness in strategic networking</li>
-                        </ul>
-                    </div>
-                    <br>
-
-                    <div class="sub-section">
-                        <div class="with-date">
-                            <b>Assistant Restaurant Manager</b><span>12/2011 – 10/2017</span>
-                        </div>
-                        <p>McDonalds Italia, Faenza, Italy</p>
-                        <ul class="skill-list">
-                            <li>Promoted to Assistant Restaurant Manager after 6 months as a Crew Member</li>
-                            <li>Effective leadership: Demonstrated ability to lead and motivate a diverse team of employees</li>
-                            <li>Operational management: Proficient in overseeing day-to-day restaurant operations, ensuring efficiency and adherence to company standards</li>
-                            <li>Team collaboration: Skilled in fostering a positive team environment, promoting effective communication, and resolving conflicts</li>
-                            <li>Training and development: Successful implementation of training programs to enhance staff skills and maintain high performance standards</li>
-                            <li>Problem-solving: Quick and effective resolution of issues, adapting to unforeseen challenges in a fast-paced environment</li>
-                            <li>Communication skills: Clear and concise communication with both team members and higher management</li>
-                            <li>Time management: Efficiently handle multiple tasks and prioritize responsibilities to meet operational needs</li>
-                        </ul>
-                    </div>
-
-
+                        <br>
+    
+                        <article>
+                            <div class="sub-section">
+                                <div class="with-date">
+                                    <h4>Technical sales specialists (Office Furniture)</h4><span>07/2019 - 08/2023</span>
+                                </div>
+                                <P>Punto Ufficio, Castel Bolognese, Italy</P>
+                                <ul class="skill-list">
+                                    <li>Identify and cultivate new clients for long-term relationships</li>
+                                    <li>Verify the client's needs and develop a project using AutoCAD.</li>
+                                    <li>Preparation of offers and sales prices, management of negotiations, and finalizing the sale</li>
+                                    <li>After sale supervision of delivery, assembly and site inspection</li>
+                                    <li>Managed and updated company website with new product releases</li>
+                                    <li>Took the initiative to develop new additional company media, including print presentations and videos. Resulting in a better appointment/sell ratio for the whole team and a better customer experience</li>
+                                </ul>
+                            </div>
+                        </article>
                         
-                </div>
-
+                        <br>
+    
+                        <article>
+                            <div class="sub-section">
+                                <div class="with-date">
+                                    <h4>Real Estate Agent </h4><span>11/2017 – 06/2019</span>
+                                </div>
+                                <P>Tecnocasa, Castel Bolognese, Italy</P>
+                                <ul class="skill-list">
+                                    <li>Cultivated strong client relationships, proactively addressing their needs</li>
+                                    <li>Demonstrated a profound understanding of local market trends</li>
+                                    <li>Proficient in securing deals with expertise in contract negotiation</li>
+                                    <li>Tailored precise communication to meet the unique needs of each client</li>
+                                    <li>Excelled in creating compelling property listings and demonstrated adeptness in strategic networking</li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <br>
+    
+                        <article>
+                            <div class="sub-section">
+                                <div class="with-date">
+                                    <h4>Assistant Restaurant Manager</h4><span>12/2011 – 10/2017</span>
+                                </div>
+                                <p>McDonalds Italia, Faenza, Italy</p>
+                                <ul class="skill-list">
+                                    <li>Promoted to Assistant Restaurant Manager after 6 months as a Crew Member</li>
+                                    <li>Effective leadership: Demonstrated ability to lead and motivate a diverse team of employees</li>
+                                    <li>Operational management: Proficient in overseeing day-to-day restaurant operations, ensuring efficiency and adherence to company standards</li>
+                                    <li>Team collaboration: Skilled in fostering a positive team environment, promoting effective communication, and resolving conflicts</li>
+                                    <li>Training and development: Successful implementation of training programs to enhance staff skills and maintain high performance standards</li>
+                                    <li>Problem-solving: Quick and effective resolution of issues, adapting to unforeseen challenges in a fast-paced environment</li>
+                                    <li>Communication skills: Clear and concise communication with both team members and higher management</li>
+                                    <li>Time management: Efficiently handle multiple tasks and prioritize responsibilities to meet operational needs</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- END SECTIONS  -->
             </div>
-
+            <!-- END RESUME  -->
         </div>
-        
-
-
+        <!-- END CENTRAL ELEMENT -->
         <footer>©2024 Andrea Visani. All rights reserved.</footer>
+
     </body>
-    <script src="script.js"></script>
+
 </html>
