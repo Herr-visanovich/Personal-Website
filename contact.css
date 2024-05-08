@@ -12,6 +12,11 @@
     padding: 1.2em 0.25em 1.2em 1em;
 }
 
+.linkedin-image{
+    padding: auto;
+    margin-top: 4px;
+}
+
 /* SET EACH ELEMENT IN ITS POSITION FOR DESKTOP*/
 /** FNAME LNAME
     MAIL  PHONE
